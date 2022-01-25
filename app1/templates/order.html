@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+<div class="container " style="margin-top: 150px;">
+  <table class="table">
+    <thead style="background-color:#ff0150;">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">price</th>
+
+
+        <th>View</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      {% for i in ord %}
+      <tr>
+        <td>{{ i.name }} </td>
+        <td >{{ i.price}} </td>
+       
+        <td><a href="{% url  'productview' i.id %}">view</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

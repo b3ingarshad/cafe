@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET">
+    <select name="category"> 
+        <option value="default">---</option>   
+        <option value="electronics">electronics</option>
+        <option value="grocery">grocery</option>
+        <option value="furniture">furniture</option>
+    </select>
+    <input type="number" name="user" value="{{val1}}" placeholder="enter price" required>
+    <input type="number" name="user" value="{{val1}}" placeholder="GST" required>
+    <input type="submit" value="SUBMIT">
+    </form>
+<h1>Total of {{cat}} is : {{ans}}</h1>    
+</body>
+</html>

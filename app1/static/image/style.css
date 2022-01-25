@@ -1,0 +1,99 @@
+.collapse ul li a.active{
+    color:red !important;
+}
+.collapse ul li button{
+    border: none;
+    padding: 10px;
+    margin-left: 70px;
+}
+.menu-search button{
+    border:none;
+}
+.main h2 span{
+    color:#ff0150;
+    
+}
+.main h2{
+    font-size: 50px;
+    margin-top: 230px;
+}
+.navbar .navbar-brand img{
+    height: 10px !important; 
+}
+.dropdown-menu{
+    min-height:300px;
+    overflow:hidden !important;
+
+}
+span{
+    color:#ff0150;
+}
+.menu .card img{
+    height: 200px;
+}
+
+.back-img{
+    height: 100vh;
+    background-size: cover;
+}
+.back-img .heading{
+    padding-top: 200px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    font-size: 60px;
+}
+.back-img .heading span{
+    color: #ff0150;
+}
+
+.back-img .btn{
+    background-color:	#ff0150;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+
+.row {
+    margin:80px;
+}
+ 
+.main{
+    padding: 20px;
+    display: grid;
+    min-height: 600px;
+
+    
+}
+.box1 .bb{
+    display: grid;
+    position: absolute;
+    top: 130px;
+    
+    
+}
+.box2{
+    height: 450px;
+    width: 500px;
+    display: grid;
+    justify-content: space-around;
+    border: 2px solid black;
+    position: absolute;
+    top: 130px;
+    right: 150px;
+
+}
+.box2 p{
+    font-size: xxx-large;
+    clear:both;
+}
+footer{
+    background-color:#ff0150;
+    height: 50px;
+    text-align: center;
+    padding:20px;
+    clear:both;
+
+    
+  
+}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="row choice_food">
+  <div class="col-md-12 text-center " style="margin-top:60px">
+    <a href="#" class="btn" style="background-color: #ff0150; color: white;">All</a>
+    {% for c in arshad %}
+    <a href="/cat/{{c.name}}" class="btn">{{ c }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container ">
+  <div class="row menu ">
+    {% for i in pro %}
+    <div class="col-md-3 col-sm-12 col-12">
+      <div class="card-deck">
+        <div class="card " style="margin-bottom: 20px;">
+          <img class="card-img-top img-fluid" src="{{i.images.url}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{i.name}}</h5>
+            <p class="card-text">Only at <b>{{i.price}}</b>₹</p>
+            <a href="#" class="btn btn-danger " style="color: white;" >Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+
+<div class="container">
+  <div class="row menu ">
+    {% for i in s %}
+    <div class="col-md-3">
+      <div class="card-deck">
+        <a href="{% url 'productview' i.id %}" style="color: black; text-decoration: none">
+          <div class="card " style="margin-bottom: 20px;">
+            <img class="card-img-top" src="{{i.images.url}}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{i.name}}</h5>
+              <p class="card-text">Only at <b>{{i.price}}</b>₹</p><br>
+              <a class="btn btn-danger">Order Now</a>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+<header class="back-img" style="background-image:url('{% static 'image/bg2.jpg' %}');">
+    <div class="text-center  food-text" style="margin-top: 0px;">
+        <h1 class="text-capitalize heading text-light"><span>B3ING</span> | CAFE
+        </h1>
+        <br>
+        <a href="{% url 'menu' %}"><button type="button" class="btn ">OUR MENU</button></a>
+
+        
+    </div>
+    
+</header>
+<h1 class="text-capitalize heading " style="color: black; text-align:center;">Welcome {{ per.username }}
+</h1>
+
+
+    
+{% endblock %}
